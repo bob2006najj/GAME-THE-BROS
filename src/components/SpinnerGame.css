@@ -1,0 +1,662 @@
+@import url('https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cherry+Cream+Soda&family=Climate+Crisis&family=Concert+One&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* General Navbar Styles */
+.navbar_container {
+    width: 100%;
+    background-color: #333;
+    padding: 10px 20px;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    height: 70px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    height: 100%;
+}
+
+.navbar img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    margin-right: 20px;
+    z-index: 2;
+}
+
+.navbar h1 {
+    color: #FFD700; /* Bright yellow color */
+    font-size: 24px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'JetBrains Mono', monospace;
+    z-index: 1;
+    white-space: nowrap;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+/* Menu Button */
+.menu-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    color: white;
+    font-size: 24px;
+    position: relative;
+    right: 0;
+    padding: 5px;
+    transition: transform 0.3s ease;
+    z-index: 2;
+}
+
+.menu-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.nav-links li a:hover {
+    background-color: #ff5722;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.nav-links li a.active {
+    background-color: #ff5722;
+    color: white;
+}
+
+.nav-game-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.nav-game-btn:hover {
+    background-color: #e64a19;
+    transform: translateY(-2px);
+}
+
+/* Responsive Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .navbar img {
+        height: 40px;
+    }
+
+    .navbar h1 {
+        font-size: 20px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background-color: #444;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 200px;
+        padding: 15px;
+        border-radius: 8px;
+        display: none;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 8px 0;
+        width: 100%;
+    }
+
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .nav-game-btn {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar_container {
+        padding: 5px 10px;
+    }
+
+    .navbar img {
+        height: 35px;
+    }
+
+    .navbar h1 {
+        font-size: 18px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .nav-links {
+        top: 60px;
+        right: 10px;
+        width: 180px;
+        padding: 10px;
+    }
+
+    .nav-links li a {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .nav-game-btn {
+        padding: 8px 15px;
+        font-size: 13px;
+    }
+}
+
+/* Existing Spinner Game Styles */
+.spinner-game-container {
+    margin-top: 7rem;
+    min-height: calc(100vh - 7rem);
+    background-color: #f5f5f5;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.menu-selector {
+    margin-top: 20px; /* Add space between container top and menu selector */
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-selector button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.menu-selector button.active {
+    background: #ff6b6b;
+    color: white;
+}
+
+.wheel-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.wheel-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    margin-bottom: 80px;
+}
+
+.wheel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 4s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+    transform-origin: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border: 8px solid #fff;
+}
+
+.wheel-section {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    transform-origin: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.wheel-item-content {
+    transform: rotate(45deg);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.5rem;
+}
+
+.item-name {
+    font-size: 0.85rem;
+    line-height: 1.1;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.item-price {
+    font-size: 0.75rem;
+    opacity: 0.9;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+.wheel-pointer {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 30px solid #ff6b6b;
+    z-index: 2;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.spin-button {
+    position: absolute;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0.8rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: #ff6b6b;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(255,107,107,0.3);
+}
+
+.spin-button:hover {
+    transform: translateX(-50%) scale(1.05);
+    box-shadow: 0 6px 20px rgba(255,107,107,0.4);
+}
+
+.spin-button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: translateX(-50%) scale(1);
+    box-shadow: none;
+}
+
+/* Quiz Styles */
+.quiz-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.quiz-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.quiz-header h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.quiz-instruction {
+    color: #666;
+    font-size: 1rem;
+}
+
+.selected-item-preview {
+    background: #f8f8f8;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.selected-item-preview h3 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.item-description {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.quiz-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.ingredients-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+    padding: 1rem;
+    background: #f8f8f8;
+    border-radius: 15px;
+}
+
+.ingredient-item {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.ingredient-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.ingredient-item input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    accent-color: #ff6b6b;
+}
+
+.ingredient-item span {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+.check-answer-btn {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: #4CAF50;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+    min-width: 200px;
+}
+
+.check-answer-btn:hover:not(:disabled) {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+.check-answer-btn:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.result-container {
+    text-align: center;
+    padding: 2rem;
+    background: #f8f8f8;
+    border-radius: 15px;
+}
+
+.result-container h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.result-container h3.correct {
+    color: #4CAF50;
+}
+
+.result-container h3.incorrect {
+    color: #f44336;
+}
+
+.correct-ingredients {
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.correct-ingredients h4 {
+    color: #333;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.correct-ingredients ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    justify-content: center;
+}
+
+.correct-ingredients li {
+    background: #e8f5e9;
+    color: #2e7d32;
+    padding: 0.6rem 1.2rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.spin-again-btn {
+    padding: 1rem 2.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    background: #ff6b6b;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1.5rem;
+    min-width: 200px;
+}
+
+.spin-again-btn:hover {
+    background: #ff5252;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .spinner-game-container {
+        margin-top: 6rem;
+        padding: 15px;
+    }
+
+    .wheel-container {
+        max-width: 400px;
+        padding: 15px;
+    }
+
+    .wheel-section {
+        padding: 0.4rem;
+    }
+
+    .wheel-item-content {
+        gap: 0.2rem;
+        padding: 0.4rem;
+    }
+
+    .item-name {
+        font-size: 0.75rem;
+    }
+
+    .item-price {
+        font-size: 0.65rem;
+    }
+
+    .spin-button {
+        padding: 0.7rem 2rem;
+        font-size: 1rem;
+        bottom: -50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .spinner-game-container {
+        margin-top: 5rem;
+        padding: 10px;
+    }
+
+    .wheel-container {
+        max-width: 300px;
+        padding: 10px;
+    }
+
+    .wheel-section {
+        padding: 0.3rem;
+    }
+
+    .wheel-item-content {
+        gap: 0.15rem;
+        padding: 0.3rem;
+    }
+
+    .item-name {
+        font-size: 0.65rem;
+    }
+
+    .item-price {
+        font-size: 0.55rem;
+    }
+
+    .spin-button {
+        padding: 0.6rem 1.8rem;
+        font-size: 0.9rem;
+        bottom: -45px;
+    }
+
+    .menu-selector {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu-selector button {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 360px) {
+    .spinner-game-container {
+        margin-top: 4.5rem;
+        padding: 8px;
+    }
+
+    .wheel-container {
+        max-width: 250px;
+        padding: 8px;
+    }
+
+    .wheel-section {
+        padding: 0.25rem;
+    }
+
+    .wheel-item-content {
+        gap: 0.1rem;
+        padding: 0.25rem;
+    }
+
+    .item-name {
+        font-size: 0.6rem;
+    }
+
+    .item-price {
+        font-size: 0.5rem;
+    }
+
+    .spin-button {
+        padding: 0.5rem 1.5rem;
+        font-size: 0.85rem;
+        bottom: -40px;
+    }
+}

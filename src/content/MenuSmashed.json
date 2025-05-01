@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "ORIGINAL DOUBLE SMASHED",
+        "price": 12.50,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["200g smashed patties (2x100g patties)", "double american cheese", "Grilled onion", "Dill Pickles And Magic Sauce"]
+    },
+    {
+        "id": 2,
+        "name": "OKLAHOMA DOUBLE SMASHED",
+        "price": 12.50,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["200g smashed patties with thinly sliced onions (2x100g patties)", "double american cheese", "Dill Pickles And Magic Sauce"]
+    },
+    {
+        "id": 3,
+        "name": "THE G.O.A.T(NEW)",
+        "price": 12.50,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["200g smashed patties (2x100g patties)", "double american cheese", "Raw onion","lettuce", "Dill Pickles","ketchup","mayo and American mustard"]
+
+    },
+    {
+        "id": 4,
+        "name": "THE NEW KID(NEW)",
+        "price": 13.00,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["200g smashed patties (2x100g patties)", "Crisp beef or pork bacon", "double american cheese", "fresh green chili pepper", " onion jam and Magic sauce"]
+    }
+
+]

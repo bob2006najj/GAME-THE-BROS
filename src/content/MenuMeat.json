@@ -1,0 +1,92 @@
+[
+
+{
+"id": 1,
+"name": "THE CHEESE BURGER",
+"price": 12.25,
+"image": "../assets/the-bros-logo edit.png",
+"ingredients":["180gr char-grilled beef patty", "Cheddar Cheese", "grilled onions", "lettuce", "tomato", "dill pickles", "The Bros Secret sauce"]
+},
+
+{
+"id": 2,
+"name": "BACON CHEESEBURGER",
+"price": 12.75,
+"image": "../assets/the-bros-logo edit.png",
+"ingredients":["180gr char-grilled beef patty", "Crisp beef or pork bacon", "Cheddar cheese", "grilled onions", "lettuce", "tomato", "dill pickles", "The Bros' Secret sauce"]
+
+},
+
+{
+"id": 3,
+"name": "SWISS MUCHROOM",
+"price": 12.75,
+"image": "../assets/the-bros-logo edit.png",
+"ingredients":["180gr char-grilled beef patty", "Swiss and Cream cheese", "grilled mushrooms", "grilled onions", "lettuce", "tomato", "dill pickles", "The Bros' Secret sauce"]
+},
+
+{
+"id": 4,
+"name": "CRAN-BRIE",
+"price": 12.75,
+"image": "../assets/the-bros-logo edit.png",
+"ingredients":["180gr char-grilled beef patty", "Cranberry sauce", "Brie cheese", "grilled onions", "rocket leavesmayo"]
+},
+
+{
+"id": 5,
+"name": "BABY BLUE",
+"price": 12.50,
+"image": "../assets/the-bros-logo edit.png",
+"ingredients":["180gr char-grilled beef patty", "Blue cheese chunks", "onion jam", "rocket leaves", "Blue cheese-mayo sauce"]
+},
+
+{
+"id": 6,
+"name": "BURNING MAN",
+"price": 12.50,
+"image": "../assets/the-bros-logo edit.png",
+"ingredients":["180gr char-grilled beef patty", "Swiss cheese", "grilled mixed bell peppers", "grilled onions", "lettuce", "dill pickles"," homemade smokey hot sauce and The Bros' Secret sauce"]
+},
+
+{
+"id": 7,
+"name": "TRUFF-OFF",
+"price": 12.50,
+"image": "../assets/the-bros-logo edit.png",
+"ingredients":["180gr char-grilled beef patty", "swiss cheese", "grilled onions", "lettuce","Truffle mayo"]
+},
+
+{
+"id": 8,
+"name": "OUTLAW",
+"price": 12.50,
+"image": "../assets/the-bros-logo edit.png",
+"ingredients":["180gr char-grilled beef patty", "Bbq sauce", "crunchy onions", "Cheddar cheese", "lettuce", "pickles", "tomato and mayo"]
+},
+
+{
+"id": 9,
+"name": "STEAK CHEESE (SPICY)",
+"price": 13.50,
+"image": "../assets/the-bros-logo edit.png",
+"ingredients":["280g thinly sliced steak marinated for 48hrs", "double Cheddar cheese", "sliced fresh onions", "rocket leaves and Chipotle mayo"]
+},
+
+{
+"id": 10,
+"name": "MAGIC STEAK", 
+"price": 13.50,
+"image": "../assets/the-bros-logo edit.png",
+"ingredients":["280g thinly sliced steak marinated for 48hrs", "double Cheddar cheese", "coleslaw", "sliced fresh onions", "sweet pickles and Magic sauce"]
+},
+
+{
+"id": 11,
+"name": "DUNK IT",
+"price": 12.75,
+"image": "../assets/the-bros-logo edit.png",
+"ingredients":["180g Char-grilled beef patty", "double Cheddar Cheese", "grilled onions"," bell peppers served in a pressed", "toasted bun with Chipotle mayo" ,"The Bros' Secret sauce on the side"]
+}
+
+]

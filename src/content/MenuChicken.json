@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "name": "THE GRILLED ONE",
+        "price": 10.50,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Char-grilled chicken breast", "Cheddar cheese", "lettuce", "dill pickles", "tomato and Cajun sauce"]
+    },
+    {
+        "id": 2,
+        "name": "THE OUTLAW",
+        "price": 12.50,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Char-grilled chicken breast", "BBQ sauce", "crunchy onions", "Cheddar cheese", "lettuce", "dill pickles", "tomato and mayo"]
+    },
+    {
+        "id": 3,
+        "name": "THE OLD SCHOOL",
+        "price": 11.75,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Southern style fried chicken breast", "Cheddar cheese", "lettuce", "dill pickles", "lettuce", "tomato and Cajun sauce"]
+    },
+    {
+        "id": 4,
+        "name": "THE O.G.",
+        "price": 11.75,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Southern style fried chicken breast", "American cheese", "Lettuce And Mayo"]
+    },
+    {
+        "id": 5,
+        "name": "THE ALL-STAR",
+        "price": 11.75,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Southern style fried chicken breast", "Cheddar Cheese", "Slaw", "Sweet Pickles", "Magic Sauce"]
+    },
+    {
+        "id": 6,
+        "name": "THE NASHVILLE HOT",
+        "price": 12.50,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Southern style fried chicken breast In Our Homemade Hot Sauce", "Cheddar cheese", "Slaw", "Sweet Pickles", "Mayo"]
+    },
+    {
+        "id": 7,
+        "name": "THE BUFFALO",
+        "price": 12.50,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Southern style fried chicken breast In Our Homemade Buffalo Sauce", "Cheddar cheese", "lettuce", "Dill Pickles", "Tomato and Mayo"]
+    },
+    {
+        "id": 8,
+        "name": "THE BBQ",
+        "price": 12.50,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Southern style fried chicken breast In Our Homemade BBQ Sauce", "Cheddar cheese", "lettuce", "Dill Pickles", "Tomato and Honey Mustard"]
+    },
+    {
+        "id": 9,
+        "name": "THE LITTLE CAESAR",
+        "price": 12.50,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Southern style fried chicken breast In Our Homemade Parmesan Caesar", "lettuce", "Dill Pickles", "Tomato and Mayo"]
+    },
+    {
+        "id": 10,
+        "name": "THE GOLD DIGGER",
+        "price": 12.50,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Southern style fried chicken breast In Our Homemade Honey Mustard", "Cheddar cheese", "lettuce", "Dill Pickles", "Tomato and Mayo"]
+    },
+    {
+        "id": 11,
+        "name": "THE PINEAPPLE EXPRESS",
+        "price": 12.75,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Southern style fried chicken breast In Our Homemade Sweet Teriyaki Sauce", "Swiss cheese", "Caramelized Pineapple", "spring onion", "Lettuce And Mayo"]
+    },
+    {
+        "id": 12,
+        "name": "THE BRUNCH",
+        "price": 12.75,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Southern style fried chicken breast dipped in Maple sauce", "Cheddar cheese", "Lettuce", "Dill Pickles And Chipotle Mayo"]
+    },
+    {
+        "id": 13,
+        "name": "THE CRAN-BRIE",
+        "price": 12.75,
+        "image": "../assets/the-bros-logo edit.png",
+        "ingredients": ["Southern style fried chicken breast smotherd in our homemade Cranberry sauce", "Brie cheese", "Grilled onion", "Rocket Leaves And Mayo"]
+    }
+]
